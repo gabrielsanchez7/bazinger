@@ -32,6 +32,7 @@ function App(){
     this.burguerMenu = Handlebars.compile($('#burguerMenu').html())(arrays);
     this.icoMenu = $('.icoMenu');
     this.btnTop = $('.btnTop');
+    this.logo = $('.img-logo a');
 }
 
 App.prototype.init = function(){
@@ -73,6 +74,9 @@ App.prototype.handler = function(){
     $('.handler1').addClass('handler-test-active');
 
     this.contBurguerMenu.append(ob.burguerMenu);
+    this.logo.click(function(ev){
+        ev.preventDefault();
+    })
 }
 
 App.prototype.llenarMenu = function(){
