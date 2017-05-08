@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+	<title>Bazinger App</title>
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Josefin+Sans:400,700|Montserrat+Alternates:400,600,800" rel="stylesheet">
+	<link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+	<div class="btnTop"><i class="fa fa-angle-double-up"></i></div>
+	<header id="nav-home">
+		<div class="nav-menu">
+			<div class="container">
+				<div class="img-logo"><a href="#"><img src="images/logo-bazinger.png" alt="Bazinger"></a></div>
+				<ul class="menu"></ul>
+				<div class="icoMenu fa fa-bars"></div>
+				<div class="burguerMenu">
+					<h4>Menú</h4>
+					<ul class="cont-burguerMenu">
+						<script id="burguerMenu" type="text/x-handlebars-template">
+							{{#each listMenu}}
+							<li>
+								<a href="#{{href}}" class="{{href}}"><span class="fa {{ico}}"></span>{{name}}</a>
+							</li>
+							{{/each}}
+						</script>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="slide-cont container">
+			<script id="slide-home" type="text/x-handlebars-template">
+				{{#each banner}}
+				<article class="slide {{nSlide}}" data-id="{{idSlide}}">
+					<section class="data">
+						<h2>{{appName}} <i class="{{appIco}}"></i></h2>
+						<p class="subtitle">{{subtitle}}</p>
+						<p>{{description}}</p>
+					</section>
+					<section class="buttons">
+						<a href="#" class="download">Download</a>
+						<a href="#" class="more">Learn more <i class="fa fa-arrow-circle-right"></i></a>
+					</section>
+					<section class="available">
+						<span>Available On:</span>
+						<span><i class="fa fa-apple"></i></span>
+						<span><i class="fa fa-android"></i></span>
+					</section>
+				</article>
+				{{/each}}
+			</script>
+		</div>
+		<span class="handler left"><i class="fa fa-angle-double-left"></i></span>
+		<span class="handler right"><i class="fa fa-angle-double-right"></i></span>
+		<div class="handler dots"></div>
+	</header>
+	<div id="nav-features" class="style-cont">
+		<div class="features container">
+			<h2 class="style-h2">Summarise the features</h2>
+			<p class="toggle style-subtitle subtitle">Summarise what your product all about</p>
+			<div class="cont-features">
+				<script id="features" type="text/x-handlebars-template">
+					{{#each summarise}}
+					<div class="feature">
+						<div class="cont-ico">
+							<span class="feature-img"><i class="{{ico}}"></i></span>
+							<span class="feature-img hover-ico "><i class="{{ico}}"></i></span>
+						</div>
+						<h3>{{name}}</h3>
+						<p>{{description}}</p>
+					</div>
+					{{/each}}
+				</script>
+			</div>
+		</div>
+	</div>
+	<div id="nav-gallery">
+		<div class="style-cont gallery container">
+			<h2 class="style-h2">Show the gallery</h2>
+			<p class="style-subtitle subtitle">Summarise what your producto all about</p>
+			<div class="cont-gallery">
+				<script id="gallery" type="text/x-handlebars-template">
+					{{#each gallery}}
+					<div class="screen-shot">
+						<div class="hover-screen-shot {{class}}"></div>
+						<img src="{{img}}" alt="{{alt}}">
+						<h3>{{name}}</h3>
+					</div>
+					{{/each}}
+				</script>
+			</div>
+		</div>
+	</div>
+	<div id="pop-gallery">
+		<div class="cont-pop-gallery">
+			<script id="pop" type="text/x-handlebars-template">
+				{{#each popImg}}
+				<img class="pop-img {{class}}" src="{{img}}" alt="{{alt}}">
+				{{/each}}
+			</script>
+		</div>
+		<span class="close-pop"><i class="fa fa-close"></i></span>
+		<span class="left-pop"><i class="fa fa-angle-double-left"></i></span>
+		<span class="right-pop"><i class="fa fa-angle-double-right"></i></span>
+	</div>
+	<div id="nav-video">
+		<div class="cont-video">
+			<div class="mask-video">
+				<span class="ico-play"><i class="fa fa-play"></i></span>
+				<h3>Whatch the best tecnology in Action</h3>
+				<p>Eum cu tantas legere complectitur, hinc utamur ea eam. Eum patrioque mnesarchum eu, diam erant convenire et vis.Eum patrioque mnesarchum eu, diam erant convenire et vis Et essent evertitur sea, vis cu ubique referrentur, sed eu dicant expetendis.</p>
+			</div>
+		</div>
+	</div>
+	<div id="pop-video">
+		<iframe class="video-iphone" src="https://www.youtube.com/embed/3GGs_TMPFz8" frameborder="0" allowfullscreen></iframe>
+		<span class="close-pop"><i class="fa fa-close"></i></span>
+	</div>
+	<div id="nav-prices">
+		<div class="style-cont container">
+			<h2 class="style-h2">Choose your price</h2>
+			<p class="style-subtitle">Summarise what your product all about</p>
+			<div class="cont-prices">
+				<script id="prices" type="text/x-handlebars-template">
+				{{#each prices}}
+				<div class="price {{class}}">
+					<h3>{{name}}</h3>
+					<div class="cash">{{price}}</div>
+					<ul>
+						<li>{{description.item1}}</li>
+						<li>{{description.item2}}</li>
+						<li>{{description.item3}}</li>
+						<li>{{description.item4}}</li>
+					</ul>
+					<a href="#" class="{{classButton}}">Purchase</a>
+				</div>
+				{{/each}}
+				</script>
+			</div>
+		</div>
+	</div>
+	<div id="nav-testimonials">
+		<div class="style-cont container">
+			<h2 class="style-h2">Testimonials</h2>
+			<div class="cont-tests">
+				<div class="rotate-tests">
+					<script id="testimonials" type="text/x-handlebars-template">
+						{{#each testimonials}}
+						<div class="test {{class}}">
+							<img src="{{img}}">
+							<div>
+								<p>{{paragraph}}</p>
+								<div class="test-by">
+									<span>Some person</span>
+									<span>from Some Company</span>
+								</div>
+							</div>
+							</div>
+						{{/each}}
+					</script>
+				</div>
+			</div>
+			<div class="cont-handler-test"></div>
+		</div>
+	</div>
+	<div id="nav-download">
+		<div class="style-cont container">
+			<h2>Do you Like this app?</h2>
+			<a href="#">Download</a>
+		</div>
+	</div>
+	<div id="nav-contact">
+		<div class="contact">
+			<form>
+				<h2 class="style-h2">Contact</h2>
+				<label class="cont-input">
+					<input id="name" type="text" placeholder="Name" class="camp">
+					<span class="error fa fa-times"></span>
+					<span class="check fa fa-check"></span>
+				</label>
+				<label class="cont-input">
+					<input id="email" type="text" placeholder="Email Address" class="camp">
+					<span class="error fa fa-times"></span>
+					<span class="check fa fa-check"></span>
+				</label>
+				<label class="cont-input">
+					<input id="subject" type="text" placeholder="Subject" class="camp">
+				</label>
+				<label class="cont-input">
+					<textarea id="message" name="" id="" cols="30" rows="10" placeholder="Message" class="camp"></textarea>
+				</label>
+				<a href="#">Send</a>
+			</form>
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3902.5205736029384!2d-77.06161108563622!3d-12.007639791493382!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105cefcd4f62df7%3A0xc04e7b3499133267!2sCC+Plaza+Norte!5e0!3m2!1ses!2spe!4v1493843006248" frameborder="0" style="border:0" allowfullscreen></iframe>
+		</div>
+	</div>
+	<footer>
+		<p>© 2014 BAZINGER . ALL RIGHTS RESERVED | TEMPLATE BY  <a href="#">W3LAYOUTS</a></p>
+	</footer>
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js">
+</script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.6/handlebars.min.js"></script>
+	<script src="js/base-datos.js"></script>
+	<script src="js/main.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			var app = new App();
+			app.init();
+		});
+	</script>
+</body>
+</html>
