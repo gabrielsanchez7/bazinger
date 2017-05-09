@@ -736,6 +736,13 @@ article.slide {
 	align-items: center;
 	margin: 50px auto;
 	color: #7B7A7A;
+	position: absolute;
+	opacity: 0;
+	transition: 0.25s;
+}
+
+.test-active {
+	opacity: 1;
 }
 
 .test img {
@@ -766,12 +773,8 @@ article.slide {
 	width: 800px;
 	margin: auto;
 	overflow: hidden;
-}
-
-.rotate-tests {
-	display: flex;
-	width: 2400px;
-	transition: 0.25s;
+	position: relative;
+	height: 270px;
 }
 
 .cont-handler-test {
