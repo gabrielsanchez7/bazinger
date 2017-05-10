@@ -1,15 +1,33 @@
-@media screen and (min-width: 320px) {
+@media screen and (min-width: 200px) {
+
+	.menu {
+		display: none !important;
+	}
+
+	.nav-menu .icoMenu {
+		display: block !important;
+	}
 
 	.handler.left,
 	.handler.right {
 		top: 94% !important;
+		margin: 0 !important;
+	}
+
+	.handler.left {
+		left: 10px !important;
+	}
+
+	.handler.right {
+		right: 10px !important;
 	}
 
 	article.slide {
 		right: initial !important;
 		margin: 0 20px !important;
 		width: initial !important;
-		top: 95px !important;
+		top: 125px !important;
+		text-align: center;
 	}
 
 	.handler.left i,
@@ -36,6 +54,34 @@
 
 	.cont-prices .price {
 		margin-bottom: 20px;
+	}
+
+	.cont-tests {
+		width: initial !important;
+		height: 475px !important;
+	}
+
+	.cont-tests .test {
+		flex-direction: column;
+		width: initial !important;
+		text-align: center;
+		margin: 50px 15px;
+	}
+
+	.cont-tests .test img {
+		margin: 0 0 20px 0 !important;
+	}
+
+	.test .test-by {
+		float: initial !important;
+	}
+
+	.test .test-by span {
+		text-align: center !important;
+	}
+
+	#nav-download {
+		padding: 0 15px !important;
 	}
 
 }

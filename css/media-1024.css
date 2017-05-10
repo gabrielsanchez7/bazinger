@@ -1,0 +1,12 @@
+@media screen and (min-width: 1024px) {
+
+	.menu {
+		display: flex !important;
+		margin-right: 20px !important;
+	}
+
+	.nav-menu .icoMenu {
+		display: none !important;
+	}
+
+}

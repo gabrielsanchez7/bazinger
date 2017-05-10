@@ -1,0 +1,25 @@
+@media screen and (min-width: 860px) {
+
+	.cont-tests {
+		height: 270px !important;
+		width: 800px !important;
+	}
+
+	.cont-tests .test {
+		flex-direction: initial !important;
+		text-align: left !important;
+	}
+
+	.cont-tests .test img {
+		margin-right: 50px !important;
+	}
+
+	.cont-tests .test .test-by {
+		float: right !important;
+	}
+
+	.cont-tests .test span {
+		text-align: right !important;
+	}
+
+}

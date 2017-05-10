@@ -1,0 +1,12 @@
+@media screen and (min-width: 720px) {
+
+	.handler.left,
+	.handler.right {
+		top: 50% !important;
+	}
+
+	article.slide {
+		text-align: left !important;
+	}
+
+}

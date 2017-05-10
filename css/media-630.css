@@ -1,0 +1,24 @@
+@media screen and (min-width: 630px) {
+
+	article.slide {
+		top: 160px !important;
+		padding: 0 60px !important;
+	}
+
+	.cont-video .mask-video {
+		padding: 100px !important;
+	}
+
+	.cont-prices {
+		justify-content: center !important;
+	}
+
+	.cont-prices .price {
+		margin: 20px 10px;
+	}
+
+	.cont-tests .test {
+		padding: 0 60px !important;
+	}
+
+}
