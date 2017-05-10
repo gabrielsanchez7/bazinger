@@ -47,6 +47,7 @@ body {
 
 header {
 	background-image: url(../images/bg.jpg);
+	background-color: #383A3A;
 	height: 700px;
 	background-size: cover;
 	position: relative;

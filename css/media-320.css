@@ -48,11 +48,6 @@
 		margin: 0 15px;
 	}
 
-	#pop-gallery {
-		opacity: 1 !important;
-		z-index: 3 !important;
-	}
-
 	#pop-gallery .left-pop i,
 	#pop-gallery .right-pop i {
 		bottom: 10px !important;
@@ -90,7 +85,7 @@
 	}
 
 	.cont-prices .price {
-		margin-bottom: 20px;
+		margin: 20px 10px;
 	}
 
 	.cont-tests {
