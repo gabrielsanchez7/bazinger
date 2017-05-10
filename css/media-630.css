@@ -9,6 +9,11 @@
 		padding: 100px !important;
 	}
 
+	#pop-video iframe {
+		height: 350px !important;
+		top: calc(50% - 175px) !important;
+	}
+
 	.cont-prices {
 		justify-content: center !important;
 	}

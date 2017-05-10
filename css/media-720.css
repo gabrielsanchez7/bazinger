@@ -9,4 +9,11 @@
 		text-align: left !important;
 	}
 
+	#pop-video iframe {
+		width: 800px !important;
+		height: 430px !important;
+		top: calc(50% - 215px) !important;
+		left: calc(50% - 400px) !important;
+	}
+
 }
